@@ -1,4 +1,4 @@
-# blt_transformer
+# blt_transformers
 
 Meta의 BLT(Byte Latent Transformer) 1B 가중치를 `transformers>=5.0.0`의 `BltForCausalLM`으로
 변환·로딩·실행하는 레퍼런스 코드입니다. 필요한 작업을 `blt_transformer` 패키지로 묶었습니다.
@@ -10,7 +10,7 @@ Meta의 BLT(Byte Latent Transformer) 1B 가중치를 `transformers>=5.0.0`의 `B
 ## 설치
 
 ```bash
-pip install "git+https://github.com/esoterikosQ/blt_transformer.git"
+pip install "git+https://github.com/esoterikosQ/blt_transformers.git"
 ```
 
 ## 1. 가중치 변환
