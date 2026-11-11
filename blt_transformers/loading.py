@@ -9,7 +9,7 @@ def load_model(path, *, attention_mode="hf", device="cuda", dtype=None,
 
     ``hf`` uses the stock Transformers class (full-causal local masks).
     ``osc`` uses ``blt_hf.patched`` to apply the original 512-window/EOS masks; it needs a
-    checkpoint made by ``blt_transformer.convert`` and was verified only on transformers 5.16.1.
+    checkpoint made by ``blt_transformers.convert`` and was verified only on transformers 5.16.1.
     """
     import torch
     if attention_mode not in ATTENTION_MODES:

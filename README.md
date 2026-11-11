@@ -1,7 +1,7 @@
 # blt_transformers
 
 Meta의 BLT(Byte Latent Transformer) 1B 가중치를 `transformers>=5.0.0`의 `BltForCausalLM`으로
-변환·로딩·실행하는 레퍼런스 코드입니다. 필요한 작업을 `blt_transformer` 패키지로 묶었습니다.
+변환·로딩·실행하는 레퍼런스 코드입니다. 필요한 작업을 `blt_transformers` 패키지로 묶었습니다.
 
 - 검증 환경: Python 3.11, `torch==2.11.0+cu128`, `transformers==5.16.1`, BF16 GPU
   (RTX 5090, A100, H200)
@@ -19,7 +19,7 @@ pip install "git+https://github.com/esoterikosQ/blt_transformers.git"
 접근 승인을 받고 `hf auth login` 또는 `HF_TOKEN`으로 인증한 뒤 변환합니다. CPU에서 실행하며 여유 RAM이 약 28GiB 필요합니다.
 
 ```bash
-python -m blt_transformer.convert --output-dir ./blt-1b-hf
+python -m blt_transformers.convert --output-dir ./blt-1b-hf
 ```
 
 변환 내용:
@@ -35,7 +35,7 @@ python -m blt_transformer.convert --output-dir ./blt-1b-hf
 ## 2. 로딩
 
 ```python
-from blt_transformer import load_model
+from blt_transformers import load_model
 
 model = load_model("./blt-1b-hf", device="cuda")
 ```
@@ -53,7 +53,7 @@ model = load_model("./blt-1b-hf", device="cuda")
 
 ```python
 import torch
-from blt_transformer import encode, decode, generate
+from blt_transformers import encode, decode, generate
 
 # 생성: 문자열을 넣으면 BOS를 붙여 인코딩하고, EOS 또는 길이 한도에서 멈춘다.
 out = generate(model, "안녕하세요. 오늘 날씨가", max_new_bytes=64)
@@ -84,7 +84,7 @@ BOS와 EOS는 직접 붙입니다(`encode(text, bos=True, eos=False)`). `generat
 - **원본 attention mask:** HF 기본 구현은 로컬·엔트로피 모델에 일반 full-causal mask를 씁니다.
   원본 설정(window 512, EOS 구간 분리)을 적용하려면 `load_model(path, attention_mode="osc")`를 사용합니다.
   - 이 경로는 [blt_hf/patched/modeling_blt.py](blt_hf/patched/modeling_blt.py)의 수정 모델을 씁니다.
-  - `blt_transformer.convert`로 만든 체크포인트가 필요합니다.
+  - `blt_transformers.convert`로 만든 체크포인트가 필요합니다.
   - `transformers==5.16.1`에서만 검증했습니다.
   - 원본 대비 변경은 [modeling_blt_osc.diff](blt_hf_checks/manifests/modeling_blt_osc.diff)에 있습니다.
 - **생성 속도:** cache가 없어 바이트마다 전체 입력을 다시 계산합니다. A100에서 측정한 값은 바이트당 약 44ms입니다.
@@ -93,7 +93,7 @@ BOS와 EOS는 직접 붙입니다(`encode(text, bos=True, eos=False)`). `generat
 
 | 경로 | 내용 |
 |---|---|
-| `blt_transformer/` | 위 1–3단계 라이브러리 |
+| `blt_transformers/` | 위 1–3단계 라이브러리 |
 | `blt_hf/`, `blt_hf_checks/`, `scripts/`, `tests/` | 이 코드로 수행한 한국어 GEC 파인튜닝 실험과 검증 코드 |
 
 GEC 실험의 실행 안내는 [blt_hf/NEURON.md](blt_hf/NEURON.md)에 있습니다. 외부 코드의 출처와 라이선스는

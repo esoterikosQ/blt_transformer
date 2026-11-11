@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "blt-transformer"
+name = "blt-transformers"
 version = "0.1.0"
 description = "Load and run Meta BLT with Hugging Face Transformers"
 readme = "README.md"
@@ -17,5 +17,5 @@ dependencies = [
 ]
 
 [tool.setuptools.packages.find]
-include = ["blt_transformer*", "blt_hf*"]
+include = ["blt_transformers*", "blt_hf*"]
 exclude = ["blt_hf_checks*"]

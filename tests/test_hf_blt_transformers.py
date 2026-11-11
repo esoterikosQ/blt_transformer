@@ -1,6 +1,6 @@
 import unittest
 
-from blt_transformer.tokens import BOS_ID, EOS_ID, decode, encode
+from blt_transformers.tokens import BOS_ID, EOS_ID, decode, encode
 
 
 class BltTokensTest(unittest.TestCase):

@@ -17,7 +17,7 @@ that every upstream component has the same license.
 - `blt_hf_checks/vendor/convert_blt_weights_to_hf.py`: project-modified converter,
   changed 2026-09-15 for pinned local artifacts, mapping validation and conversion reporting.
   The change record is `blt_hf_checks/manifests/vendor.diff`.
-- `blt_transformer/convert.py`: library copy of the same conversion functions, with the
+- `blt_transformers/convert.py`: library copy of the same conversion functions, with the
   project-local cache, token-file and evidence-report handling replaced by a plain
   `hf_hub_download` entry point (2026-11-11).
 - Full license: [LICENSE.transformers](blt_hf_checks/vendor/LICENSE.transformers).

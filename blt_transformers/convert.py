@@ -5,7 +5,7 @@
 # blt_hf_checks/manifests/vendor.diff.
 """Convert Meta's original BLT checkpoint into a Transformers ``BltForCausalLM`` directory.
 
-    python -m blt_transformer.convert --output-dir <new directory>
+    python -m blt_transformers.convert --output-dir <new directory>
 
 Needs access to the gated ``facebook/blt-1b`` repository (``hf auth login`` or ``HF_TOKEN``)
 and about 28 GiB of free host RAM. Runs on CPU.
