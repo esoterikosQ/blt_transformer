@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blt-transformer"
+version = "0.1.0"
+description = "Load and run Meta BLT with Hugging Face Transformers"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers>=5.0.0",
+    "huggingface_hub",
+    "safetensors",
+    "tokenizers",
+]
+
+[tool.setuptools.packages.find]
+include = ["blt_transformer*", "blt_hf*"]
+exclude = ["blt_hf_checks*"]
