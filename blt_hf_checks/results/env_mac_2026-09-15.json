@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-14T23:34:04.544107+00:00",
+  "hostname": "Great-Smoky-Mountains.local",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.11.2",
+  "python_executable": "/opt/local/bin/python3",
+  "scope": "cpu_metadata_only",
+  "torch": null,
+  "transformers": null,
+  "xformers": null,
+  "safetensors": null,
+  "huggingface_hub": null,
+  "devices": [],
+  "errors": [],
+  "status": "informational"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "source_tensor_count": 515,
+  "target_tensor_count": 510,
+  "model_schema_tensor_count": 510,
+  "failures": [],
+  "conversion_report_hash": "00805ed1d402de791c531df2d124d47333a4199b8853516f4b01c06c85cdd441",
+  "mapping_hash": "cdf6b2b9438704276fd297d5e81f787c74dd49a89dc6f1dd01888c94172b553c",
+  "checker_hash": "38a4ee22575d2aae4a85923d62d0f53fc1b69c59ce3c6ca9659fbe7eef1202e8",
+  "forward_parity_passed": false,
+  "validation_status": "pending"
+}

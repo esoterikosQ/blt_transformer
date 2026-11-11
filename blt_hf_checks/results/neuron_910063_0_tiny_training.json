@@ -1,0 +1,19 @@
+{
+  "scope": "tiny_model_training_and_resume",
+  "checker_hash": "b9964aa296395222779178a645537d2ba2c4fc88c711c475d7145e81df228d19",
+  "real_B_training": false,
+  "status": "passed",
+  "first_loss": 5.712053298950195,
+  "second_loss": 5.710567951202393,
+  "resumed_loss": 5.710567951202393,
+  "parameter_dtype": "bfloat16",
+  "gradient_dtype": "bfloat16",
+  "optimizer_state_dtype": "bfloat16",
+  "gradient_norms": {
+    "encoder": 9.370359614491463,
+    "global": 4.071368284523487,
+    "decoder": 4.978457385674119
+  },
+  "resume_rtol": 1e-06,
+  "resume_atol": 1e-07
+}

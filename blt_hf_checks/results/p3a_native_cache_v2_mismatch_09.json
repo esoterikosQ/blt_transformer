@@ -1,0 +1,432 @@
+{
+  "status": "complete",
+  "scope": "v2 full generation on 32 v1 mismatches and 12 controls",
+  "comparison": "blt_hf_checks/results/p3a_native_full_global_06.json",
+  "comparison_sha256": "7e96601ecfeced426503983c931b345fd9d2be504c3d88d0d337877a9d2f72d6",
+  "control_report": "blt_hf_checks/results/p3a_native_complete_global_05.json",
+  "control_report_sha256": "8e5a1850a5d86ef4776acf7b06a41f663bb6ce4f3be53a80ccd2e645cb61f81a",
+  "checkpoint_model_sha256": "cc8466be70e67e7164d14a271818bef42a919914cd7737b6471c1f3b7454ab28",
+  "validation_tsv_sha256": "002645a47593a88735fe7b13fdc7c9fe2e4c1a92191f90ec7fb95449758ecd98",
+  "backend": "global-prefix-greedy-v2",
+  "generation_code_sha256": "64bd2512c34502a7995195a6a27775773f8fec2ca4e568d7826c65ac20efe157",
+  "reuse_code_sha256": "548e037b3f85a8b8909c11039a5a838eef1465dce826e076a9ec3681508af5be",
+  "diagnostic_code_sha256": "d56a2000df19a0283996dcd91fe045f54ac1d152c95093f7dc1422364496723c",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "torch_version": "2.11.0+cu128",
+  "v1_mismatch_count": 32,
+  "control_count": 12,
+  "v2_remaining_mismatch_count": 20,
+  "v2_remaining_mismatch_indices": [
+    168,
+    311,
+    313,
+    481,
+    594,
+    616,
+    804,
+    868,
+    927,
+    980,
+    1060,
+    1173,
+    1219,
+    1472,
+    2007,
+    2067,
+    2343,
+    2411,
+    2584,
+    2613
+  ],
+  "generation_seconds": 117.76009648898616,
+  "cases": [
+    {
+      "index": 55,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 3.9040019307285547
+    },
+    {
+      "index": 162,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.507154214195907
+    },
+    {
+      "index": 168,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 5.726837296970189
+    },
+    {
+      "index": 279,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2530435021035373
+    },
+    {
+      "index": 297,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.1386483660899103
+    },
+    {
+      "index": 311,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 2.2274999329820275
+    },
+    {
+      "index": 313,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.6837623347528279
+    },
+    {
+      "index": 427,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.3690411848947406
+    },
+    {
+      "index": 481,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 2.4026545770466328
+    },
+    {
+      "index": 567,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9224228039383888
+    },
+    {
+      "index": 594,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.7210554582998157
+    },
+    {
+      "index": 616,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.6158387511968613
+    },
+    {
+      "index": 644,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.1628841310739517
+    },
+    {
+      "index": 791,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.365455730818212
+    },
+    {
+      "index": 804,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 0.9282611031085253
+    },
+    {
+      "index": 868,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 4.934137130156159
+    },
+    {
+      "index": 898,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.7532341908663511
+    },
+    {
+      "index": 927,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.822557126171887
+    },
+    {
+      "index": 980,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.5321435569785535
+    },
+    {
+      "index": 1060,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 2.4800127409398556
+    },
+    {
+      "index": 1076,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.3166784141212702
+    },
+    {
+      "index": 1086,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 3.9124986520037055
+    },
+    {
+      "index": 1128,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.8303438182920218
+    },
+    {
+      "index": 1173,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 4.544826423749328
+    },
+    {
+      "index": 1219,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 4.2802728321403265
+    },
+    {
+      "index": 1472,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 4.351903405971825
+    },
+    {
+      "index": 1505,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.491632997058332
+    },
+    {
+      "index": 1710,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.0873033688403666
+    },
+    {
+      "index": 1743,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.445891442708671
+    },
+    {
+      "index": 1767,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.101003041025251
+    },
+    {
+      "index": 1892,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9398761629126966
+    },
+    {
+      "index": 1952,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.1670342707075179
+    },
+    {
+      "index": 1953,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4745980142615736
+    },
+    {
+      "index": 2007,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 3.1330499961040914
+    },
+    {
+      "index": 2016,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4411994311958551
+    },
+    {
+      "index": 2067,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 5.168114150874317
+    },
+    {
+      "index": 2122,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4624852556735277
+    },
+    {
+      "index": 2290,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9725260850973427
+    },
+    {
+      "index": 2305,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2116558803245425
+    },
+    {
+      "index": 2343,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 3.7887746919877827
+    },
+    {
+      "index": 2349,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.803863801062107
+    },
+    {
+      "index": 2411,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 1.4223161009140313
+    },
+    {
+      "index": 2584,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 2.2576720877550542
+    },
+    {
+      "index": 2613,
+      "set": "v1_mismatch",
+      "same_token_ids": false,
+      "different_fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ],
+      "generation_seconds": 7.703930100891739
+    }
+  ]
+}

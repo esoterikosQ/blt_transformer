@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "facebook/blt-1b": {
+      "revision": "8134b32f0b1d25d1248c30e8c7bdfd442d3bb380",
+      "files": {
+        "config.json": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/config.json",
+          "bytes": 3280,
+          "sha256": "e05024b547dc6765c1cd69ccf1b8cfaca51667145f56bd7493a372c2538f178b"
+        },
+        "entropy_model/params.json": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/entropy_model/params.json",
+          "bytes": 4062,
+          "sha256": "98ae063abc6b0183f6534f477ebc72b5d9f28f012a66c99370bc9392443fc716"
+        },
+        "model.safetensors": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/model.safetensors",
+          "bytes": 9067807688,
+          "sha256": "3738bef71ca45c1ac58783c93c6eee8da6feefc0672113bcccd0a44cfd3cfe1f"
+        },
+        "entropy_model/consolidated.pth": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/entropy_model/consolidated.pth",
+          "bytes": 199064782,
+          "sha256": "69357751c37f17caeb21bcf29d4292f4c927cedcb31aefbc73472bd570cd5428"
+        },
+        "LICENSE": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/LICENSE",
+          "bytes": 11519,
+          "sha256": "75d8fd97632e6f2e439117d052e772a128098a496d7a6dca9197d44de74125e8"
+        },
+        "README.md": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/README.md",
+          "bytes": 2197,
+          "sha256": "cd7ef55edd34872d63809cfffca163777d8e13cecac2827ad465b3dede42eec2"
+        }
+      }
+    },
+    "facebook/blt-entropy": {
+      "revision": "f2aae511e44e2086b1204bc4ddec6ac6c9651332",
+      "files": {
+        "config.json": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-entropy/snapshots/f2aae511e44e2086b1204bc4ddec6ac6c9651332/config.json",
+          "bytes": 538,
+          "sha256": "0cf64099cbbf60a3396dbc6940acad605ac8a64711b9ed4edf9057db87b189eb"
+        },
+        "model.safetensors": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-entropy/snapshots/f2aae511e44e2086b1204bc4ddec6ac6c9651332/model.safetensors",
+          "bytes": 199037304,
+          "sha256": "aa45c5ffae9f528329d146a91356d1d06056b71653beddada39781bfcadb521d"
+        },
+        "README.md": {
+          "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-entropy/snapshots/f2aae511e44e2086b1204bc4ddec6ac6c9651332/README.md",
+          "bytes": 2234,
+          "sha256": "c57bad7b0493be31677c4ee6987e72162de79c875fecf737f00fba37e1eea751"
+        }
+      }
+    }
+  },
+  "converted": false,
+  "legacy_actual_revision_verified": false,
+  "entropy_serialized_files_equal": false
+}

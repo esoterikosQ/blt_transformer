@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "run_id": "outputs/blt_hf/native/native-gleu2-b1-s0",
+  "run_signature": "53e81075e06ae133c83e88b4afe6c506ace5e4210edc61789265b2ab7b635c43",
+  "code_hash": "1d3abf7e25d591ac28d265e7b7cd7238cc0be90805197cc68986248b1db29ce1",
+  "dataset": "native",
+  "epochs": 2,
+  "selection_metric": "val_gleu",
+  "validation_num_beams": 1,
+  "validation_max_new_bytes": 768,
+  "epoch_checkpoints": [
+    {
+      "epoch": 1,
+      "checkpoint": "step-00000385-3bcc8d25",
+      "global_step": 385,
+      "val_loss": 0.06836944695200861,
+      "val_gleu": 53.727000000000004
+    },
+    {
+      "epoch": 2,
+      "checkpoint": "step-00000770-b757f160",
+      "global_step": 770,
+      "val_loss": 0.06761714888406264,
+      "val_gleu": 55.176199999999994
+    }
+  ],
+  "best": {
+    "checkpoint": "step-00000770-b757f160",
+    "global_step": 770,
+    "epoch": 2,
+    "val_gleu": 55.176199999999994,
+    "num_beams": 1,
+    "model_sha256": "7ffb1ee787fe0a2baeafb69e4510837118ff765f5a6fb2fa2030624f3849d9d4"
+  }
+}

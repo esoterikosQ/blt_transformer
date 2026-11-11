@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-17T22:56:20.000616+00:00",
+  "hostname": "gpu54",
+  "platform": "Linux-5.14.0-427.13.1.el9_4.x86_64-x86_64-with-glibc2.34",
+  "python": "3.11.16",
+  "python_executable": "/home01/r984a02/.conda/envs/phdq_blt_hf/bin/python",
+  "scope": "gpu_runtime",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.16.1",
+  "xformers": null,
+  "safetensors": "0.8.0",
+  "huggingface_hub": "1.31.0",
+  "devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA H200",
+      "capability": [
+        9,
+        0
+      ],
+      "total_memory": 150110011392,
+      "bf16_supported": true,
+      "bf16_smoke": true
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA H200",
+      "capability": [
+        9,
+        0
+      ],
+      "total_memory": 150110011392,
+      "bf16_supported": true,
+      "bf16_smoke": true
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA H200",
+      "capability": [
+        9,
+        0
+      ],
+      "total_memory": 150110011392,
+      "bf16_supported": true,
+      "bf16_smoke": true
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA H200",
+      "capability": [
+        9,
+        0
+      ],
+      "total_memory": 150110011392,
+      "bf16_supported": true,
+      "bf16_smoke": true
+    }
+  ],
+  "errors": [],
+  "nvidia_smi": [
+    "NVIDIA H200, 580.105.08, 143771 MiB",
+    "NVIDIA H200, 580.105.08, 143771 MiB",
+    "NVIDIA H200, 580.105.08, 143771 MiB",
+    "NVIDIA H200, 580.105.08, 143771 MiB"
+  ],
+  "cuda_runtime": "12.8",
+  "blt_import": true,
+  "cuda_available": true,
+  "cuda_smoke": true,
+  "loaded_libcudart": [
+    "/scratch/r984a02/.conda/envs/phdq_blt_hf/lib/python3.11/site-packages/nvidia/cuda_runtime/lib/libcudart.so.12"
+  ],
+  "status": "pass"
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "inference_only",
+  "checks": [],
+  "generation_hash": "3ac36e3151ac250d2178cfeef0e01fdb12942db55e8ed47557f5c99fe22904a8",
+  "factory_config_hash": "b6594551d3ca94fc322c93e898479dd0cb09a526b45ce86e9a75e1573ac20b9f",
+  "loaded_config_hash": "421cac490b7747b0226ba517828ccb75a22335bacedd29154317e1c3200fdc2c",
+  "status": "failed",
+  "error": "AssertionError: Factory and loaded runtime config differ"
+}

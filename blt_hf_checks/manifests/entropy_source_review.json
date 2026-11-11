@@ -1,0 +1,10 @@
+{
+  "bytelatent/entropy_model.py": {
+    "sha256": "af03b2a9757891d4aa4ae2ef6792e209ab04904d4b8bc757082ef87ea0bd6f6a",
+    "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae"
+  },
+  "bytelatent/transformer.py": {
+    "sha256": "8a249daf1609f3a15ccc336da84da56cacd2f0d4e09a864f4b4e8b5e8f90ef47",
+    "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae"
+  }
+}

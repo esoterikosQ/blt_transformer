@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "legacy_actual_commit": null,
+  "legacy_actual_revision_verified": false,
+  "model_id": "facebook/blt-1b",
+  "model_revision": "8134b32f0b1d25d1248c30e8c7bdfd442d3bb380",
+  "entropy_model_id": "facebook/blt-entropy",
+  "entropy_revision": "f2aae511e44e2086b1204bc4ddec6ac6c9651332",
+  "converter_upstream_commit": "2cba19507be799b7bef247ca6c1c4708bf881b5b",
+  "converter_sha256": "d386a2bded0e8d70aa9a8a8a6b67f48d0f985ecf0936458a6eb01da34ac99187",
+  "vendor_diff_sha256": "c1dd024ba06f0822f5398a6781842dc0e951716d9470eafdf203e606e97603bf",
+  "inputs": {
+    "config.json": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/config.json",
+      "sha256": "e05024b547dc6765c1cd69ccf1b8cfaca51667145f56bd7493a372c2538f178b"
+    },
+    "model.safetensors": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/model.safetensors",
+      "sha256": "3738bef71ca45c1ac58783c93c6eee8da6feefc0672113bcccd0a44cfd3cfe1f"
+    },
+    "entropy_model/params.json": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/entropy_model/params.json",
+      "sha256": "98ae063abc6b0183f6534f477ebc72b5d9f28f012a66c99370bc9392443fc716"
+    },
+    "entropy_model/consolidated.pth": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/entropy_model/consolidated.pth",
+      "sha256": "69357751c37f17caeb21bcf29d4292f4c927cedcb31aefbc73472bd570cd5428"
+    },
+    "LICENSE": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-1b/snapshots/8134b32f0b1d25d1248c30e8c7bdfd442d3bb380/LICENSE",
+      "sha256": "75d8fd97632e6f2e439117d052e772a128098a496d7a6dca9197d44de74125e8"
+    },
+    "legacy_entropy/config.json": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-entropy/snapshots/f2aae511e44e2086b1204bc4ddec6ac6c9651332/config.json",
+      "sha256": "0cf64099cbbf60a3396dbc6940acad605ac8a64711b9ed4edf9057db87b189eb"
+    },
+    "legacy_entropy/model.safetensors": {
+      "path": "/home/itcmaster/projects/phdq3/artifacts/hub/models--facebook--blt-entropy/snapshots/f2aae511e44e2086b1204bc4ddec6ac6c9651332/model.safetensors",
+      "sha256": "aa45c5ffae9f528329d146a91356d1d06056b71653beddada39781bfcadb521d"
+    }
+  },
+  "output_files": {
+    "README.md": "87d7154cc96c89cee6e505f61194f79b3ddd42df7dd6f513839bd962b972a924",
+    "config.json": "20c8ea351e69f83f72dc203d4e822e6b61681f68c9dc051c89876b43c75f8ae6",
+    "model.safetensors": "4b6115bd01f6793b4a3afb6734f16b7204e841cb9248e23cd79b67ef01fff061",
+    "tokenizer_config.json": "4a6f8b6b8d34ba070448d343b9ba575cdaeda818bedba0efc1edda6aee0d74a1",
+    "LICENSE": "75d8fd97632e6f2e439117d052e772a128098a496d7a6dca9197d44de74125e8",
+    "tokenizer.json": "2a97e711394bc7edfb0e356a494bd62a944cc7e9381f8aedd8a60b1e324c83dc"
+  },
+  "installed_environment_lock_sha256": "2b388dccbbe3982ea1828824ce67f397afff1ebbeb555f908d365f6b066ec1c1",
+  "attention_backend": "eager",
+  "attention_mode": "osc",
+  "validation_status": "pending",
+  "mask_diff_sha256": "78831bb6fd94b9474fdc0dca18141e85fe834a1248c5ad2441e3232882ff7f03",
+  "evidence": {
+    "weights": "blt_hf_checks/results/weights_p1_validation_20260915.json",
+    "forward_smoke": "blt_hf_checks/results/p1_osc_v5_20260915.json",
+    "patch_rules": "blt_hf_checks/results/patches_p1_osc_v5_20260915.json"
+  }
+}

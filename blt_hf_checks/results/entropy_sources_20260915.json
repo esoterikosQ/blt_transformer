@@ -1,0 +1,11 @@
+{
+  "tensor_equal": true,
+  "embedded_tensor_count": 129,
+  "separate_tensor_count": 129,
+  "differences": [],
+  "serialized_files_equal": false,
+  "selected_entropy_model_id": "facebook/blt-entropy",
+  "selected_entropy_revision": "f2aae511e44e2086b1204bc4ddec6ac6c9651332",
+  "legacy_actual_revision_verified": false,
+  "selection_reason": "Pinned separate source specified by P1; historical downloaded revision is not recovered"
+}

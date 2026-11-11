@@ -1,0 +1,49 @@
+{
+  "sources": {
+    "configuration_blt.py": {
+      "sha256": "6b1cf09ecfc49860456488e6baafcfbfdce2ca9327a3620485275e16c897ce24",
+      "version": "5.16.1"
+    },
+    "modeling_blt.py": {
+      "sha256": "a6ccb0a2c67696f9772b88dded28f17cb1726a8d0ccfac9f783f1604fe056bd5",
+      "version": "5.16.1"
+    },
+    "bytelatent__model__utils.py": {
+      "sha256": "a05989057bced24438b4610fe3b642f6f784778c171d37f40a9002c6d3827e7b",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/model/utils.py"
+    },
+    "bytelatent__model__blt.py": {
+      "sha256": "1604981b9218e81f3b4f04d02d3d7d8431184d1af94d28baa41867a76c0ecf27",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/model/blt.py"
+    },
+    "bytelatent__model__local_models.py": {
+      "sha256": "45c4a841ec2dcd7a8d7916fa21e1f167b2d2afaab4edbd81a72beabdbb9cf10c",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/model/local_models.py"
+    },
+    "bytelatent__model__latent_transformer.py": {
+      "sha256": "2dc56c0051a7811c2f4cda57f91b1ccc30f066cbba6c418fb51c89319120654b",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/model/latent_transformer.py"
+    },
+    "bytelatent__base_transformer.py": {
+      "sha256": "644df3f1b565f82b81a16c41a8ffa38e75efad0a07571883fe207b4801917e57",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/base_transformer.py"
+    },
+    "bytelatent__data__patcher.py": {
+      "sha256": "8fa2eab345f981250364580e3a2a01e8c4809e9e66755294367b9c50e7b75ba1",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "bytelatent/data/patcher.py"
+    },
+    "LICENSE": {
+      "sha256": "176fdd712458a69435102791f06cf14bc66f86089351415c9df9c3c263798631",
+      "commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae",
+      "original_path": "LICENSE"
+    }
+  },
+  "legacy_actual_commit": null,
+  "review_source_commit": "9774ed4fcc78313f9f218295f3d7e4decdadf2ae"
+}

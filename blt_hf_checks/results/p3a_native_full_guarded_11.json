@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "scope": "all native validation beam-1 generated records, no scoring",
+  "reference_dir": "outputs/blt_hf_eval/native/val/native-main-01-beam1-hf-p3a",
+  "candidate_dir": "outputs/blt_hf_eval/native/val/native-main-01-beam1-guarded-p3a",
+  "reference_fingerprint": "42da3028ac9646b1abc22778456984a991072652c51e52c76efe84e4592bbae4",
+  "candidate_fingerprint": "57af5a931ace8d31784774d12a128fe5b8506b96c67dcdc68242ce4587ca9e7e",
+  "checkpoint_hash": "cc8466be70e67e7164d14a271818bef42a919914cd7737b6471c1f3b7454ab28",
+  "reference_code_hash": "157d1d73e535625baa2876a50a5558097b42ee5755692e7b969cca78ce2c9b26",
+  "candidate_code_hash": "c95c7a27771a405515ec7a3eb07f23466d669fb18aae1ed672de613d433ba067",
+  "sample_count": 2634,
+  "mismatches": [],
+  "exact_output_parity": "passed",
+  "reference_generation_seconds": 9074.296909315977,
+  "cached_generation_seconds": 6906.756382426247,
+  "generation_speedup": 1.3138290113149038,
+  "reference_sentence_p50_seconds": 2.771247903816402,
+  "reference_sentence_p95_seconds": 6.471512585412711,
+  "cached_sentence_p50_seconds": 1.984329606872052,
+  "cached_sentence_p95_seconds": 5.480495810974389,
+  "cache_preliminary_skips": 150352,
+  "cache_guard_refreshes": 1792
+}

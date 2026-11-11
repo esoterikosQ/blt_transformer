@@ -1,0 +1,276 @@
+{
+  "status": "mismatch",
+  "scope": "all native validation beam-1 generated records, no scoring",
+  "reference_dir": "outputs/blt_hf_eval/native/val/native-main-01-beam1-hf-p3a",
+  "candidate_dir": "outputs/blt_hf_eval/native/val/native-main-01-beam1-global-p3a",
+  "reference_fingerprint": "42da3028ac9646b1abc22778456984a991072652c51e52c76efe84e4592bbae4",
+  "candidate_fingerprint": "07f00e7c21468e775714ad10ab5f300e1d450c1e5ea6f61b2cb0caed9ecf92be",
+  "checkpoint_hash": "cc8466be70e67e7164d14a271818bef42a919914cd7737b6471c1f3b7454ab28",
+  "sample_count": 2634,
+  "mismatches": [
+    {
+      "index": 55,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 162,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 168,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 311,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 313,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 427,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 481,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 567,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 594,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 616,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 791,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 804,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 868,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 927,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 980,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1060,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1173,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1219,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1472,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1505,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1767,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1892,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 1952,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2007,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2016,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2067,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2122,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2305,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2343,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2411,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2584,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    },
+    {
+      "index": 2613,
+      "fields": [
+        "token_ids",
+        "raw_text",
+        "text"
+      ]
+    }
+  ],
+  "exact_output_parity": "failed",
+  "reference_generation_seconds": 9074.296909315977,
+  "cached_generation_seconds": 6620.643924715463,
+  "generation_speedup": 1.3706063960698454,
+  "reference_sentence_p50_seconds": 2.771247903816402,
+  "reference_sentence_p95_seconds": 6.471512585412711,
+  "cached_sentence_p50_seconds": 1.8999116821214557,
+  "cached_sentence_p95_seconds": 5.3243395569734275
+}

@@ -1,0 +1,177 @@
+--- blt_gec/m2_resumable.py
++++ blt_hf/m2_resumable.py
+@@ -7,6 +7,7 @@
+ import json
+ import multiprocessing as mp
+ import os
++import signal
+ import sys
+ import time
+ from collections import deque
+@@ -16,7 +17,7 @@
+ 
+ 
+ SCHEMA_VERSION = 1
+-SCORER_DIR = Path(__file__).resolve().parents[1] / "baseline" / "metric" / "m2scorer" / "scripts"
++SCORER_DIR = Path(__file__).resolve().parent / "vendor" / "m2"
+ 
+ 
+ @dataclass(frozen=True)
+@@ -37,10 +38,8 @@
+ 
+ 
+ def _load_levenshtein():
+-    scorer_dir = str(SCORER_DIR)
+-    if scorer_dir not in sys.path:
+-        sys.path.insert(0, scorer_dir)
+-    return importlib.import_module("levenshtein")
++    from .vendor.m2 import levenshtein
++    return levenshtein
+ 
+ 
+ def _file_sha256(path: Path) -> str:
+@@ -223,6 +222,8 @@
+     max_unchanged_words: int,
+     ignore_whitespace_casing: bool,
+ ) -> None:
++    signal.signal(signal.SIGTERM, signal.SIG_DFL)
++    signal.signal(signal.SIGUSR1, signal.SIG_IGN)
+     started_at = time.monotonic()
+     try:
+         stats = _score_sentence(
+@@ -267,6 +268,7 @@
+     workers: int,
+     max_unchanged_words: int,
+     ignore_whitespace_casing: bool,
++    should_stop=None,
+ ) -> Iterator[dict[str, Any]]:
+     context = _multiprocessing_context()
+     waiting = deque(sentence_ids)
+@@ -274,6 +276,8 @@
+ 
+     try:
+         while waiting or active:
++            if should_stop is not None and bool(should_stop):
++                return
+             while waiting and len(active) < workers:
+                 sentence_id = waiting.popleft()
+                 parent_connection, child_connection = context.Pipe(duplex=False)
+@@ -362,23 +366,23 @@
+ 
+ 
+ def _load_completed(path: Path) -> dict[int, dict[str, Any]]:
+-    completed: dict[int, dict[str, Any]] = {}
++    completed = {}
+     if not path.exists():
+         return completed
+-    with path.open("r", encoding="utf-8") as file_obj:
+-        for line_number, line in enumerate(file_obj, start=1):
+-            if not line.strip():
+-                continue
+-            try:
+-                record = json.loads(line)
+-            except json.JSONDecodeError:
+-                print(
+-                    f"Warning: ignoring incomplete M2 checkpoint line {line_number}",
+-                    flush=True,
+-                )
+-                continue
+-            sentence_id = int(record["sentence_id"])
+-            completed[sentence_id] = record
++    raw = path.read_bytes()
++    if raw and not raw.endswith(b"\n"):
++        boundary = raw.rfind(b"\n") + 1
++        # Preserve interrupted bytes before repairing the mutable append journal.
++        backup = path.with_name(path.name + ".torn-" + str(time.time_ns()))
++        backup.write_bytes(raw[boundary:])
++        raw = raw[:boundary]
++        path.write_bytes(raw)
++    for line in raw.decode("utf-8").splitlines():
++        record = json.loads(line)
++        idx = int(record["sentence_id"])
++        if idx in completed:
++            raise ValueError("Duplicate M2 completion record")
++        completed[idx] = record
+     return completed
+ 
+ 
+@@ -474,9 +478,13 @@
+     hypothesis_path: Path,
+     source_gold_path: Path,
+     total: int,
++    settings: dict,
+ ) -> None:
+     expected = {
+         "schema_version": SCHEMA_VERSION,
++        "settings": settings,
++        "scorer_sha256": _file_sha256(SCORER_DIR / "levenshtein.py"),
++        "wrapper_sha256": _file_sha256(Path(__file__)),
+         "hypothesis_path": str(hypothesis_path.resolve()),
+         "hypothesis_sha256": _file_sha256(hypothesis_path),
+         "source_gold_path": str(source_gold_path.resolve()),
+@@ -506,6 +514,7 @@
+     beta: float = 0.5,
+     max_unchanged_words: int = 2,
+     ignore_whitespace_casing: bool = False,
++    should_stop=None,
+ ) -> M2EvaluationResult:
+     """Evaluate M2 with sentence-level checkpoints and bounded retries."""
+ 
+@@ -541,11 +550,14 @@
+         hypothesis_path,
+         source_gold_path,
+         total,
++        {"beta": beta, "max_unchanged_words": max_unchanged_words, "ignore_whitespace_casing": ignore_whitespace_casing},
+     )
+ 
+     completed_path = m2_dir / "completed.jsonl"
+     failed_path = m2_dir / "failed.jsonl"
+     completed = _load_completed(completed_path)
++    if any(i < 0 or i >= total for i in completed):
++        raise ValueError("M2 completion index outside corpus")
+     pending = [sentence_id for sentence_id in range(total) if sentence_id not in completed]
+     latest_timeout_ids: list[int] = []
+     failed_ids: set[int] = set()
+@@ -556,7 +568,7 @@
+         "a", encoding="utf-8", buffering=1
+     ) as failed_file:
+         for pass_id in range(first_pass_id, first_pass_id + max_passes):
+-            if not pending:
++            if not pending or (should_stop is not None and bool(should_stop)):
+                 break
+             pass_timeout = timeout_seconds * (timeout_multiplier**pass_id)
+             pass_pending = sorted(pending)
+@@ -581,6 +593,7 @@
+                 workers,
+                 max_unchanged_words,
+                 ignore_whitespace_casing,
++                should_stop,
+             ):
+                 sentence_id = int(result["sentence_id"])
+                 processed_this_run += 1
+@@ -594,6 +607,7 @@
+                         json.dumps(result, ensure_ascii=False) + "\n"
+                     )
+                     completed_file.flush()
++                    os.fsync(completed_file.fileno())
+                     completed[sentence_id] = result
+                 elif result["status"] == "timeout":
+                     latest_timeout_ids.append(sentence_id)
+@@ -637,7 +651,7 @@
+                     "elapsed_seconds": time.monotonic() - pass_started_at,
+                 },
+             )
+-            pending = latest_timeout_ids
++            pending = sorted(set(latest_timeout_ids + pass_failed_ids))
+ 
+     unresolved_ids = sorted(set(range(total)) - set(completed))
+     _write_ids_atomic(m2_dir / "unresolved_ids.txt", unresolved_ids)
+@@ -661,6 +675,8 @@
+         correct = proposed = gold = 0.0
+ 
+     status = "complete" if len(completed) == total else "partial"
++    if status != "complete":
++        precision = recall = f_score = None
+     elapsed_seconds = time.monotonic() - started_at
+     result = M2EvaluationResult(
+         precision=precision,

@@ -1,0 +1,16 @@
+{
+  "scope": "tiny_model_training_and_resume",
+  "checker_hash": "46ce167d5dbf335254f58a515091713326d6a199ba2aa8663cdd8578589d3fe7",
+  "real_B_training": false,
+  "status": "passed",
+  "first_loss": 5.708359718322754,
+  "second_loss": 5.691312789916992,
+  "resumed_loss": 5.691312789916992,
+  "gradient_norms": {
+    "encoder": 9.273064881563187,
+    "global": 4.0580566972494125,
+    "decoder": 4.97454134747386
+  },
+  "resume_rtol": 1e-06,
+  "resume_atol": 1e-07
+}

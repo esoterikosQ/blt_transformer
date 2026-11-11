@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "previous-project GLEU wrapper and M2 CLI same fixtures",
+  "previous_root": "/Users/esoterikos/Nextcloud/QLab/phdq",
+  "gleu_cases": [
+    {
+      "name": "perfect",
+      "expected_gleu": 100.0
+    },
+    {
+      "name": "copy",
+      "expected_gleu": 31.333499999999997
+    },
+    {
+      "name": "empty",
+      "expected_gleu": 0.0
+    },
+    {
+      "name": "mixed",
+      "expected_gleu": 69.29769999999999
+    }
+  ],
+  "m2_cases": [
+    {
+      "fixture": "system",
+      "output": "Precision   : 0.8000\nRecall      : 0.8000\nF_0.5       : 0.8000\n"
+    },
+    {
+      "fixture": "system2",
+      "output": "Precision   : 0.7500\nRecall      : 0.6000\nF_0.5       : 0.7143\n"
+    }
+  ],
+  "numpy_reference": "2.5.3",
+  "scipy_reference": "1.18.1",
+  "gleu_fixture_hash": "7fad62a5c5e4218f71d27630fcd6a882acd6a7468bab7e9b3638323223695174",
+  "scorer_hash": "98033ebe98ee06b6d2c3138eff35d35e3d7a83b2e280684f21a89ecc056ac297",
+  "old_gleumodule_sha256": "d6bfbf85b6210ebea4faf1b582779695c0a82612f0b0615683cacf434ea1e962"
+}

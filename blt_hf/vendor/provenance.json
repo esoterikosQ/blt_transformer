@@ -1,0 +1,46 @@
+{
+  "previous_project": "/Users/esoterikos/Nextcloud/QLab/phdq",
+  "previous_project_commit": "bc48a96d45bc6200bea4a7bc28e502abdde44dfc",
+  "previous_worktree_files_authoritative": true,
+  "files": {
+    "baseline/metric/gleu.py": {
+      "original_sha256": "ce2be2a7dcd2d77f034cf3d25f9bb6cf197766eb18e4d6ee2fb2a627f1c8f96a",
+      "target": "blt_hf/vendor/gleu.py",
+      "target_sha256": "ce2be2a7dcd2d77f034cf3d25f9bb6cf197766eb18e4d6ee2fb2a627f1c8f96a"
+    },
+    "baseline/metric/gleumodule.py": {
+      "original_sha256": "d6bfbf85b6210ebea4faf1b582779695c0a82612f0b0615683cacf434ea1e962",
+      "target": "blt_hf/vendor/gleumodule_legacy.py",
+      "target_sha256": "d6bfbf85b6210ebea4faf1b582779695c0a82612f0b0615683cacf434ea1e962"
+    },
+    "baseline/metric/m2scorer/scripts/levenshtein.py": {
+      "original_sha256": "16d8222da4634ca79fb705fee8568ac5f545ff16e3ae94121ab7b445fd0fed9e",
+      "target": "blt_hf/vendor/m2/levenshtein.py",
+      "target_sha256": "1134a7a423f008d1579b5da56ceefccadf7d790be1869285352fc5d3d320bd9c"
+    },
+    "baseline/metric/m2scorer/scripts/util.py": {
+      "original_sha256": "72300f1ab12fc84ab78a1b331f4859d5740ac928786dd21f2e378f298d282338",
+      "target": "blt_hf/vendor/m2/util.py",
+      "target_sha256": "72300f1ab12fc84ab78a1b331f4859d5740ac928786dd21f2e378f298d282338"
+    },
+    "baseline/metric/m2scorer/scripts/m2scorer.py": {
+      "original_sha256": "1d390344caecf907457fbec771ec54b93b9564ee2ec3583b53038d9b4bbc0a8c",
+      "target": "blt_hf/vendor/m2/m2scorer.py",
+      "target_sha256": "f4cc747db8d8e40a9a52437e1b8a84e71909ee2425829c0d7ff79be9434463ad"
+    },
+    "baseline/metric/m2scorer/LICENSE.md": {
+      "original_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "target": "blt_hf/vendor/m2/LICENSE.md",
+      "target_sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+    },
+    "phdq3/blt_gec/m2_resumable.py": {
+      "original_sha256": "a4152f3e5e9eb27d1fdb4905182b691881a12b147895e1c8ce0cb99c0adb6cd1",
+      "target": "blt_hf/m2_resumable.py",
+      "target_sha256": "c0eba88f6ee01aae4ded8a9264644f43065b6086828539b9a33f00724c4352ac"
+    }
+  },
+  "gleu_contract": "single-reference order-4 corpus GLEU; float(format(score, .6f))*100 as previous wrapper",
+  "m2_contract": "NUS M2 Python 3 previous snapshot; beta=.5, max_unchanged_words=2; source-order annotator reduction",
+  "upstream_m2_review_commit": "cb874a7ecdcb360b08635538a299cf868258a4c1",
+  "upstream_gleu_review_commit": "50b5032a4ef2444b9381fb47a55b3bac0654a6d7"
+}

@@ -1,0 +1,167 @@
+{
+  "validation_status": "pending",
+  "attention_mode": "osc",
+  "backend": "eager",
+  "implementation_hash": "50563db635ed1cf8eba4690ab8ed3445fb8c4c8c2638bd8f28659bf6a1bf7890",
+  "mask_code_hash": "6dc89cb026dc4415cfc275383ea6fbf75f95db72a35814993e1e85386a3fdee6",
+  "use_cache": false,
+  "conversion_report_hash": "00805ed1d402de791c531df2d124d47333a4199b8853516f4b01c06c85cdd441",
+  "runtime_config_hash": "421cac490b7747b0226ba517828ccb75a22335bacedd29154317e1c3200fdc2c",
+  "forward": [
+    {
+      "sequence_length": 71,
+      "loss": 0.5502175688743591,
+      "seconds": 0.23235818202374503,
+      "masks": {
+        "entropy": {
+          "shape": [
+            1,
+            1,
+            71,
+            71
+          ],
+          "blocked": 2485
+        },
+        "encoder": {
+          "shape": [
+            1,
+            1,
+            71,
+            71
+          ],
+          "blocked": 2485
+        },
+        "global": {
+          "shape": [
+            1,
+            1,
+            38,
+            38
+          ],
+          "blocked": 703
+        },
+        "decoder": {
+          "shape": [
+            1,
+            1,
+            71,
+            71
+          ],
+          "blocked": 2485
+        }
+      }
+    },
+    {
+      "sequence_length": 1817,
+      "loss": 0.01699516735970974,
+      "seconds": 0.04712067102082074,
+      "masks": {
+        "entropy": {
+          "shape": [
+            1,
+            1,
+            1817,
+            1817
+          ],
+          "blocked": 2502001
+        },
+        "encoder": {
+          "shape": [
+            1,
+            1,
+            1817,
+            1817
+          ],
+          "blocked": 2502001
+        },
+        "global": {
+          "shape": [
+            1,
+            1,
+            35,
+            35
+          ],
+          "blocked": 595
+        },
+        "decoder": {
+          "shape": [
+            1,
+            1,
+            1817,
+            1817
+          ],
+          "blocked": 2502001
+        }
+      }
+    }
+  ],
+  "generated_ids": [
+    64,
+    70,
+    80,
+    88,
+    99,
+    75,
+    73,
+    71,
+    99,
+    87,
+    73,
+    84,
+    66,
+    14,
+    64,
+    70,
+    80,
+    88,
+    99,
+    75,
+    73,
+    71,
+    99,
+    87,
+    73,
+    84,
+    66,
+    14,
+    64,
+    70,
+    80,
+    88,
+    99,
+    75,
+    73,
+    71,
+    99,
+    87,
+    73,
+    84,
+    66,
+    14,
+    64,
+    70,
+    80,
+    88,
+    99,
+    75,
+    73,
+    71,
+    99,
+    87,
+    73,
+    84,
+    66,
+    14,
+    64,
+    70,
+    80,
+    88,
+    99,
+    75,
+    73,
+    71
+  ],
+  "generated_text": "<BLT_GEC_SEP>\n<BLT_GEC_SEP>\n<BLT_GEC_SEP>\n<BLT_GEC_SEP>\n<BLT_GEC",
+  "peak_allocated_bytes": 9848814592,
+  "status": "passed"
+}

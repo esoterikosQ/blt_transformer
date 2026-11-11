@@ -1,0 +1,10 @@
+# GPU environment contract; existing environments are not modified automatically.
+# Install torch from https://download.pytorch.org/whl/cu128, per COMMANDS.md.
+# This is an input specification, NOT the resolved requirements.lock.txt.
+torch==2.11.0+cu128
+transformers==5.16.1
+accelerate
+safetensors
+sentencepiece
+huggingface_hub
+pytest

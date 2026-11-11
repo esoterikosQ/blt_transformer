@@ -1,0 +1,421 @@
+{
+  "status": "complete",
+  "scope": "complete generation on 32 v1 mismatches and 12 controls",
+  "comparison": "blt_hf_checks/results/p3a_native_full_global_06.json",
+  "comparison_sha256": "7e96601ecfeced426503983c931b345fd9d2be504c3d88d0d337877a9d2f72d6",
+  "control_report": "blt_hf_checks/results/p3a_native_complete_global_05.json",
+  "control_report_sha256": "8e5a1850a5d86ef4776acf7b06a41f663bb6ce4f3be53a80ccd2e645cb61f81a",
+  "checkpoint_model_sha256": "cc8466be70e67e7164d14a271818bef42a919914cd7737b6471c1f3b7454ab28",
+  "validation_tsv_sha256": "002645a47593a88735fe7b13fdc7c9fe2e4c1a92191f90ec7fb95449758ecd98",
+  "backend": "global-prefix-guarded-greedy-v1",
+  "generation_code_sha256": "39278c0c96ee0c041165a7444b52cf1baa028836a3096c2242ee0a7bf2ab3279",
+  "reuse_code_sha256": "9855bffb313345130eccacba23088c82978106c5506f7e933f318273e7410856",
+  "diagnostic_code_sha256": "49c872765653db6ed86189fafadcbd8d0fa4d5c5d9c99652d3ca038a751aa369",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "torch_version": "2.11.0+cu128",
+  "v1_mismatch_count": 32,
+  "control_count": 12,
+  "remaining_mismatch_count": 0,
+  "remaining_mismatch_indices": [],
+  "generation_seconds": 124.35987823363394,
+  "cache_preliminary_skips": 2505,
+  "cache_guard_refreshes": 59,
+  "cases": [
+    {
+      "index": 55,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 11.291188647039235,
+      "cache_preliminary_skips": 101,
+      "cache_guard_refreshes": 5
+    },
+    {
+      "index": 162,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.5698940632864833,
+      "cache_preliminary_skips": 74,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 168,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.532426120247692,
+      "cache_preliminary_skips": 37,
+      "cache_guard_refreshes": 3
+    },
+    {
+      "index": 279,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2301468271762133,
+      "cache_preliminary_skips": 37,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 297,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.1082278550602496,
+      "cache_preliminary_skips": 23,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 311,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.185268214903772,
+      "cache_preliminary_skips": 69,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 313,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.6603674162179232,
+      "cache_preliminary_skips": 52,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 427,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.439486572984606,
+      "cache_preliminary_skips": 42,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 481,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.5243785711936653,
+      "cache_preliminary_skips": 77,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 567,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9558081086724997,
+      "cache_preliminary_skips": 25,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 594,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.7282777270302176,
+      "cache_preliminary_skips": 58,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 616,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.6512193540111184,
+      "cache_preliminary_skips": 50,
+      "cache_guard_refreshes": 3
+    },
+    {
+      "index": 644,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.142964944243431,
+      "cache_preliminary_skips": 74,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 791,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4419202129356563,
+      "cache_preliminary_skips": 47,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 804,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2518292181193829,
+      "cache_preliminary_skips": 28,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 868,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.527024284005165,
+      "cache_preliminary_skips": 47,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 898,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.7785426289774477,
+      "cache_preliminary_skips": 55,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 927,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.7458768519572914,
+      "cache_preliminary_skips": 57,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 980,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4537862441502512,
+      "cache_preliminary_skips": 49,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1060,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.4467991748824716,
+      "cache_preliminary_skips": 79,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 1076,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2782145803794265,
+      "cache_preliminary_skips": 44,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 1086,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.190233582165092,
+      "cache_preliminary_skips": 102,
+      "cache_guard_refreshes": 3
+    },
+    {
+      "index": 1128,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.8042126880027354,
+      "cache_preliminary_skips": 96,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1173,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.5567592438310385,
+      "cache_preliminary_skips": 60,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1219,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.206119710113853,
+      "cache_preliminary_skips": 111,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 1472,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.359140329994261,
+      "cache_preliminary_skips": 82,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1505,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.5663326922804117,
+      "cache_preliminary_skips": 62,
+      "cache_guard_refreshes": 3
+    },
+    {
+      "index": 1710,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.0744358343072236,
+      "cache_preliminary_skips": 58,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1743,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.320021671243012,
+      "cache_preliminary_skips": 84,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 1767,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 5.0519104790873826,
+      "cache_preliminary_skips": 42,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1892,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9712825859896839,
+      "cache_preliminary_skips": 19,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1952,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.1946243653073907,
+      "cache_preliminary_skips": 26,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 1953,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4578203922137618,
+      "cache_preliminary_skips": 46,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 2007,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.3111409917473793,
+      "cache_preliminary_skips": 74,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 2016,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.509693790692836,
+      "cache_preliminary_skips": 48,
+      "cache_guard_refreshes": 2
+    },
+    {
+      "index": 2067,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.723849059082568,
+      "cache_preliminary_skips": 83,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2122,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4926301422528923,
+      "cache_preliminary_skips": 39,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2290,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 0.9642964890226722,
+      "cache_preliminary_skips": 32,
+      "cache_guard_refreshes": 0
+    },
+    {
+      "index": 2305,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.2402948327362537,
+      "cache_preliminary_skips": 26,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2343,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 3.9170775059610605,
+      "cache_preliminary_skips": 130,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2349,
+      "set": "control",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 4.759741703979671,
+      "cache_preliminary_skips": 71,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2411,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 1.4920486230403185,
+      "cache_preliminary_skips": 29,
+      "cache_guard_refreshes": 1
+    },
+    {
+      "index": 2584,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 2.405098109971732,
+      "cache_preliminary_skips": 44,
+      "cache_guard_refreshes": 3
+    },
+    {
+      "index": 2613,
+      "set": "v1_mismatch",
+      "same_token_ids": true,
+      "different_fields": [],
+      "generation_seconds": 6.847465793136507,
+      "cache_preliminary_skips": 16,
+      "cache_guard_refreshes": 1
+    }
+  ]
+}

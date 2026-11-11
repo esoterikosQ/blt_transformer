@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "date": "2026-09-16",
+  "scope": "unit_tests_and_artifact_integrity",
+  "tests": {
+    "local": {
+      "path": "artifacts/logs/p1_neuron_final_local_20260916.log",
+      "sha256": "2e49ec47218c385d0570bd260273fb92a969ecc62f398652c7674b049f4a15be",
+      "tests": 76,
+      "passed": 56,
+      "skipped": 20
+    },
+    "remote": {
+      "path": "artifacts/logs/p1_neuron_final_remote_20260916.log",
+      "sha256": "815e015be803ceb5acb5f78e37bcb4071ae6eb7719004c2fb3dd3acc999bdf84",
+      "tests": 76,
+      "passed": 76,
+      "skipped": 0
+    }
+  },
+  "conversion_checks": {
+    "weight_checks": "passed",
+    "attention_mask_checks": "passed",
+    "conversion_check_environment": "itcerdo/eager/bfloat16/no-cache/unpadded",
+    "weight_report_hash": "97c8988056486cff1cc9ffc7597ec9d954ee10e56b7f6b769af2d50e4e54fa7d",
+    "mask_report_hash": "60ddf26beb4d4f34dda3b15b693e8cc1591fbbde49cdfb4be5e6d39175a0962b",
+    "original_forward_equivalence": "not_required_not_claimed"
+  },
+  "frozen_files_verified_unchanged": 158,
+  "scorer_source_and_target_files_verified": 7,
+  "neuron_connected": false,
+  "backward_executed": false,
+  "actual_optimizer_executed": false,
+  "training_checks": "not_run",
+  "evaluation_checks": "not_run",
+  "real_B_forward_evidence": "blt_hf_checks/results/p1_neuron_code_v3_20260916.json",
+  "code_commit": "734ee03e135223e0a3d3ed45f82cf5a19af1d2ae:aed8024a89b12322b528080656be2406ed6518b29809a82a5526b059be69303b",
+  "code_files": {
+    "blt_hf/__init__.py": "4981c134e251b71df4d0b14388007d103ca98567a13ea544e54bf532797424a8",
+    "blt_hf/attention.py": "6dc89cb026dc4415cfc275383ea6fbf75f95db72a35814993e1e85386a3fdee6",
+    "blt_hf/checkpoint.py": "441e5f630f5779b133f029512f7fe08f8cb9fac962bfb14ce17f8ddd2e8ef293",
+    "blt_hf/data_adapter.py": "9608c6103f76aae80cb0e10c14dd222db489d52f05ff21c049434c7a03131832",
+    "blt_hf/eval.py": "e307eb7824ce27bacad0f865b28ecb361e08b5fd830cc2c87874cce923238fea",
+    "blt_hf/evaluation.py": "6c8516ae2b2a60af997bb892f042748d5d50c7d384e5209bd65aab5a36e197a1",
+    "blt_hf/generation.py": "3ac36e3151ac250d2178cfeef0e01fdb12942db55e8ed47557f5c99fe22904a8",
+    "blt_hf/m2_resumable.py": "c0eba88f6ee01aae4ded8a9264644f43065b6086828539b9a33f00724c4352ac",
+    "blt_hf/manifest.py": "c54859dd99477cd521b61643abe881a9fff563e5f199e9901c2a753c26db8e4c",
+    "blt_hf/metrics.py": "afaae2f69cd28b37a18bf79f0bcb716ab27616bfb918b60606ca4fd3bcd0320a",
+    "blt_hf/model.py": "028ea6d9223dc76626f6571283681c017665df93bbadb4a9d1afa55a1c68a242",
+    "blt_hf/patched/__init__.py": "ca61cf5b07d487894b00924fe9c7c669a57d5ed59bb7af76603e27cd6a949af6",
+    "blt_hf/patched/modeling_blt.py": "61719aa2f0050ad4eb48eee9fbc941bd0de6f7110ccd528359cf096848302746",
+    "blt_hf/patching.py": "d8414c0753f9d750ae31ca8fb6fd156c2481b3f69ecd95bae9f206b432d13ad4",
+    "blt_hf/runtime.py": "d50087f8862795ee30ad4c96169894a2d4e029ac3309f759fcf8ecdb4727e075",
+    "blt_hf/train.py": "ac4c5feb1997a8277fe3ec7a3e007d9709405d759ee432bf947ce38aef7eabf4",
+    "blt_hf/training.py": "6135611603be7b43d3182c23ad96cdfcf03e7705d44f9caed683887e6d1585d6",
+    "blt_hf/vendor/__init__.py": "4aba398412abcb77a0d1dacd461466d900ad5c7510c8b87bfd627f4d145e6537",
+    "blt_hf/vendor/gleu.py": "ce2be2a7dcd2d77f034cf3d25f9bb6cf197766eb18e4d6ee2fb2a627f1c8f96a",
+    "blt_hf/vendor/gleumodule_legacy.py": "d6bfbf85b6210ebea4faf1b582779695c0a82612f0b0615683cacf434ea1e962",
+    "blt_hf/vendor/m2/__init__.py": "18234e72c47691b338a80c6d8959e8b7255551a262b500a2e0119b5ef5ca7c0c",
+    "blt_hf/vendor/m2/levenshtein.py": "1134a7a423f008d1579b5da56ceefccadf7d790be1869285352fc5d3d320bd9c",
+    "blt_hf/vendor/m2/m2scorer.py": "f4cc747db8d8e40a9a52437e1b8a84e71909ee2425829c0d7ff79be9434463ad",
+    "blt_hf/vendor/m2/util.py": "72300f1ab12fc84ab78a1b331f4859d5740ac928786dd21f2e378f298d282338",
+    "scripts/eval_blt_hf.sh": "294655b8731efbbc084e5a9b97cd81739fed46605723dbae692bef5574c7f33e",
+    "scripts/neuron_blt_hf_common.sh": "07dd5807b2e349454e31bdcb5373ac2828f54a8cdc65fa064d960768ccc5663b",
+    "scripts/score_blt_hf.sh": "8676a077f88943e9e331897b7c26a49805448f545d9cbd4d20c64b3228f6b273",
+    "scripts/submit_blt_hf.sh": "ad5e2bf67c41c26c24cb0b96c2e9d95179d7bfab24c334eabcfc98e3899b3541",
+    "scripts/train_blt_hf.sh": "ba82692aa0496b94c2954b9a6e24c62dd2dda7b12887101181044718f0b0c820"
+  }
+}

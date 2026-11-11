@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "run_id": "outputs/blt_hf/union/union-gleu10-guarded-a100-4gpu-b1-s0",
+  "run_signature": "4818c98f179ec853cf2b4cb685ae8b0ed730025d8697baa9fc3f12737af9ee77",
+  "code_hash": "d24a7a975d2a6313a208236120ac389f446745e1230d7b225e13bfe7e62e651f",
+  "dataset": "union",
+  "epochs": 10,
+  "completed_epochs": 10,
+  "stop_reason": "max_epochs",
+  "early_stopping_patience": 3,
+  "selection_metric": "val_gleu",
+  "validation_num_beams": 1,
+  "validation_max_new_bytes": 768,
+  "validation_generation_backend": "global-prefix-guarded-greedy-v1",
+  "epoch_checkpoints": [
+    {
+      "epoch": 1,
+      "checkpoint": "step-00003403-e0ec1338",
+      "global_step": 3403,
+      "val_loss": 0.16464522275514476,
+      "val_gleu": 27.822000000000003
+    },
+    {
+      "epoch": 2,
+      "checkpoint": "step-00006806-c4296856",
+      "global_step": 6806,
+      "val_loss": 0.1570949696832606,
+      "val_gleu": 29.294999999999998
+    },
+    {
+      "epoch": 3,
+      "checkpoint": "step-00010209-7b1d049c",
+      "global_step": 10209,
+      "val_loss": 0.15480183604597822,
+      "val_gleu": 30.872100000000003
+    },
+    {
+      "epoch": 4,
+      "checkpoint": "step-00013612-e5368cd3",
+      "global_step": 13612,
+      "val_loss": 0.15468986970966578,
+      "val_gleu": 30.848399999999998
+    },
+    {
+      "epoch": 5,
+      "checkpoint": "step-00017015-32a86167",
+      "global_step": 17015,
+      "val_loss": 0.15565144851959828,
+      "val_gleu": 31.2966
+    },
+    {
+      "epoch": 6,
+      "checkpoint": "step-00020418-def6f6e8",
+      "global_step": 20418,
+      "val_loss": 0.15657939009840538,
+      "val_gleu": 31.4092
+    },
+    {
+      "epoch": 7,
+      "checkpoint": "step-00023821-cb1913fa",
+      "global_step": 23821,
+      "val_loss": 0.15734999713161216,
+      "val_gleu": 31.583299999999998
+    },
+    {
+      "epoch": 8,
+      "checkpoint": "step-00027224-8a685f57",
+      "global_step": 27224,
+      "val_loss": 0.15759655929867208,
+      "val_gleu": 31.685000000000002
+    },
+    {
+      "epoch": 9,
+      "checkpoint": "step-00030627-7a84934a",
+      "global_step": 30627,
+      "val_loss": 0.1576384604870971,
+      "val_gleu": 31.648500000000002
+    },
+    {
+      "epoch": 10,
+      "checkpoint": "step-00034030-4c8df306",
+      "global_step": 34030,
+      "val_loss": 0.15765726551569187,
+      "val_gleu": 31.657400000000003
+    }
+  ],
+  "best": {
+    "checkpoint": "step-00027224-8a685f57",
+    "global_step": 27224,
+    "epoch": 8,
+    "val_gleu": 31.685000000000002,
+    "num_beams": 1,
+    "generation_backend": "global-prefix-guarded-greedy-v1",
+    "model_sha256": "c041941e8e123b8b7c46c76017992e5c4311bbe318a00c26b77950060fd86470"
+  }
+}
